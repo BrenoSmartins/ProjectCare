@@ -26,7 +26,7 @@ public class Caregiver {
     @Column(nullable = false, unique = true)
     private String email;
 
-    @Column(nullable = false, unique = true)
+    @Column(nullable = false)
     private String password;
 
     @Column(nullable = false)
@@ -44,7 +44,7 @@ public class Caregiver {
     @Column(nullable = false)
     private String skills;
 
-    @Column(nullable = false)
+    @Column(nullable = false    )
     private Double rating;
 
     @OneToMany(mappedBy = "caregiver", cascade = CascadeType.ALL)

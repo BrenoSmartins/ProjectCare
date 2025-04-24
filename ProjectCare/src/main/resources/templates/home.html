@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html xmlns:th="http://www.thymeleaf.org">
+
 <head>
     <meta charset="UTF-8">
     <title>Cuidados Dedicados</title>
@@ -9,15 +10,7 @@
 </head>
 <body>
 
-
-<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
-    <div class="container">
-        <a class="navbar-brand fw-bold" href="#">Cuidados Dedicados</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-    </div>
-</nav>
+<div th:replace="~{fragments/navbar :: navbar}"></div>
 
 
 <header class="bg-primary text-white text-center py-5">
@@ -35,7 +28,7 @@
 
             <div class="col">
                 <div class="card h-100 shadow-sm">
-                    <img src="/imagens/pessoa2.jpeg" class="card-img-top" alt="Foto do profissional">
+                    <img src="/imagens/p2.jpeg" class="card-img-top" alt="Foto do profissional">
                     <div class="card-body">
                         <h5 class="card-title">Maria Oliveira</h5>
                         <p class="card-text">Enfermeira com 10 anos de experiência em cuidados geriátricos. Atende em domicílio.</p>
@@ -49,7 +42,7 @@
 
             <div class="col">
                 <div class="card h-100 shadow-sm">
-                    <img src="/imagens/pessoa1.jpeg" class="card-img-top" alt="Foto do profissional">
+                    <img src="/imagens/p1.jpeg" class="card-img-top" alt="Foto do profissional">
                     <div class="card-body">
                         <h5 class="card-title">João Costa</h5>
                         <p class="card-text">Cuidador certificado, especialista em mobilidade e acompanhamento diário.</p>
@@ -63,7 +56,7 @@
 
             <div class="col">
                 <div class="card h-100 shadow-sm">
-                    <img src="/imagens/pessoa3.jpeg" class="card-img-top" alt="Foto do profissional">
+                    <img src="/imagens/p3.jpeg" class="card-img-top" alt="Foto do profissional">
                     <div class="card-body">
                         <h5 class="card-title">Ana Paula</h5>
                         <p class="card-text">Fisioterapeuta com foco em idosos, ajuda na reabilitação e qualidade de vida.</p>
