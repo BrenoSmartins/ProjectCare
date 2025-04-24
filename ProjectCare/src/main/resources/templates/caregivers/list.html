@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Cuidadores</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div th:replace="~{fragments/navbar :: navbar}"></div>
+<div class="container mt-5">
+    <h2 class="mb-4 text-center">Cuidadores Cadastrados</h2>
+
+    <table class="table table-bordered table-hover">
+        <thead class="table-primary">
+        <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Telefone</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="caregiver : ${caregivers}">
+            <td th:text="${caregiver.id}">1</td>
+            <td th:text="${caregiver.name}">Nome</td>
+            <td th:text="${caregiver.phone}">(00) 0000-0000</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>
